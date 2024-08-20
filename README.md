@@ -51,7 +51,9 @@ Develop a multi-class classifier to identify various bird species from images. T
       
 ### 6. Inference and Results Preparation
 **Inference**:
+
       1. Use the trained model to predict labels for the test dataset.
+      
       2. Extract predicted labels and confidence scores from the model’s output probabilities.
       
 **Save Results:**
