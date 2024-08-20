@@ -1,11 +1,11 @@
 # Wings_of_Wisdom
 
-Approach to Bird Species Classification
-Objective
+## Approach to Bird Species Classification
+### Objective
 Develop a multi-class classifier to identify various bird species from images. The model should handle both training and test data, which includes optional bounding box coordinates for image cropping.
 
-Workflow
-1. Data Preparation
+## Workflow
+### 1. Data Preparation
 Training Data
 CSV File (train.csv): Contains:
 
