@@ -25,9 +25,9 @@ Develop a multi-class classifier to identify various bird species from images. T
 
 ### 2. Dataset Class Implementation
 **Custom Dataset Class (BirdDataset):**
-    1. Handles reading images and their corresponding labels or bounding boxes from the CSV files.
-    2. Applies transformations to the images.
-    3. Differentiates between training and test data to handle labels and bounding boxes appropriately.
+1. Handles reading images and their corresponding labels or bounding boxes from the CSV files.
+2. Applies transformations to the images.
+3. Differentiates between training and test data to handle labels and bounding boxes appropriately.
     
 ### 3. Model Selection and Modification
 **Pretrained Model**: Use ResNet-50, a widely used convolutional neural network known for its strong performance in image classification tasks.
@@ -38,16 +38,16 @@ Develop a multi-class classifier to identify various bird species from images. T
 **Loss Function**: Use CrossEntropyLoss for multi-class classification, which combines softmax activation and negative log-likelihood loss.
 **Optimizer**: Use Adam optimizer with a learning rate of 0.001 to update model weights.
 **Training Loop**:
-     1. Iterate through the training dataset for a specified number of epochs.
-     2. Compute loss for each batch, backpropagate the errors, and update weights.
-     3. Print loss after each epoch to monitor the training process.
+1. Iterate through the training dataset for a specified number of epochs.
+2. Compute loss for each batch, backpropagate the errors, and update weights.
+3. Print loss after each epoch to monitor the training process.
           
 ### 5. Model Evaluation
 **Validation Loop:**
-      1. Set the model to evaluation mode.
-      2. Perform inference on the validation/test dataset without updating model weights.
-      3. Calculate accuracy by comparing predicted labels with true labels (for validation data).
-      4. Print accuracy to evaluate model performance.
+ 1. Set the model to evaluation mode.
+ 2. Perform inference on the validation/test dataset without updating model weights.
+ 3. Calculate accuracy by comparing predicted labels with true labels (for validation data).
+ 4. Print accuracy to evaluate model performance.
       
 ### 6. Inference and Results Preparation
 **Inference**:
