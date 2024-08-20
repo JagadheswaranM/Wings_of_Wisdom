@@ -8,20 +8,20 @@ Develop a multi-class classifier to identify various bird species from images. T
 ### 1. Data Preparation
 #### Training Data
 &emsp;**CSV File (train.csv)**: Contains:<br/>
-&emsp;**path**: Relative path to the training image.<br/>
-&emsp;**class**: Class label of the bird species.<br/>
-&emsp;**bbox**: Optional bounding box coordinates in the format left top right bottom.<br/>
+&emsp;&emsp;**path**: Relative path to the training image.<br/>
+&emsp;&emsp;**class**: Class label of the bird species.<br/>
+&emsp;&emsp;**bbox**: Optional bounding box coordinates in the format left top right bottom.<br/>
       
-**Image Processing:**
+**Image Processing:**<br/>
 &emsp;**Loading Images**: Use the PIL library to load images from the file paths specified in the CSV file.<br/>
 &emsp;**Bounding Box Handling**: If bounding boxes are provided, crop the images based on these coordinates to focus on the bird. Ensure that coordinates are in the correct order (i.e., left < right and top < bottom).<br/>
 &emsp;**Transformation**: Apply transformations such as resizing to 224x224 pixels, normalization, and conversion to tensors.<br/>
     
-**Test Data**
+**Test Data**<br/>
 &emsp;**CSV File (test.csv)**: Contains:<br/>
-&emsp;**path**: Relative path to the test image.<br/>
-&emsp;**bbox**: Optional bounding box coordinates.<br/>
-&emsp;**Image Processing**: Similar to training data, but without class labels since they are not provided for test images.<br/>
+&emsp;&emsp;**path**: Relative path to the test image.<br/>
+&emsp;&emsp;**bbox**: Optional bounding box coordinates.<br/>
+&emsp;&emsp;**Image Processing**: Similar to training data, but without class labels since they are not provided for test images.<br/>
 
 ### 2. Dataset Class Implementation
 **Custom Dataset Class (BirdDataset):**<br/>
