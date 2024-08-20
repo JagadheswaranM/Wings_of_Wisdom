@@ -7,10 +7,10 @@ Develop a multi-class classifier to identify various bird species from images. T
 ## Workflow
 ### 1. Data Preparation
 #### Training Data
-**CSV File (train.csv)**: Contains:<br/>
-**path**: Relative path to the training image.<br/>
-**class**: Class label of the bird species.<br/>
-**bbox**: Optional bounding box coordinates in the format left top right bottom.<br/>
+&emsp**CSV File (train.csv)**: Contains:<br/>
+&emsp**path**: Relative path to the training image.<br/>
+&emsp**class**: Class label of the bird species.<br/>
+&emsp**bbox**: Optional bounding box coordinates in the format left top right bottom.<br/>
       
 **Image Processing:**
 **Loading Images**: Use the PIL library to load images from the file paths specified in the CSV file.
