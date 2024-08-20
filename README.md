@@ -8,20 +8,20 @@ Develop a multi-class classifier to identify various bird species from images. T
 ### 1. Data Preparation
 **Training Data**
 **CSV File (train.csv)**: Contains:
-      **path**: Relative path to the training image.
-      **class**: Class label of the bird species.
-      **bbox**: Optional bounding box coordinates in the format left top right bottom.
+**path**: Relative path to the training image.
+**class**: Class label of the bird species.
+**bbox**: Optional bounding box coordinates in the format left top right bottom.
       
 **Image Processing:**
-   **Loading Images**: Use the PIL library to load images from the file paths specified in the CSV file.
-    **Bounding Box Handling**: If bounding boxes are provided, crop the images based on these coordinates to focus on the bird. Ensure that coordinates are in the correct order (i.e., left < right and top < bottom).
-    **Transformation**: Apply transformations such as resizing to 224x224 pixels, normalization, and conversion to tensors.
+**Loading Images**: Use the PIL library to load images from the file paths specified in the CSV file.
+**Bounding Box Handling**: If bounding boxes are provided, crop the images based on these coordinates to focus on the bird. Ensure that coordinates are in the correct order (i.e., left < right and top < bottom).
+**Transformation**: Apply transformations such as resizing to 224x224 pixels, normalization, and conversion to tensors.
     
 **Test Data**
 **CSV File (test.csv)**: Contains:
-    **path**: Relative path to the test image.
-    **bbox**: Optional bounding box coordinates.
-    **Image Processing**: Similar to training data, but without class labels since they are not provided for test images.
+**path**: Relative path to the test image.
+**bbox**: Optional bounding box coordinates.
+**Image Processing**: Similar to training data, but without class labels since they are not provided for test images.
 
 ### 2. Dataset Class Implementation
 **Custom Dataset Class (BirdDataset):**
