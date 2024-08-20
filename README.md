@@ -43,16 +43,16 @@ Develop a multi-class classifier to identify various bird species from images. T
 &emsp;&emsp;&emsp;3. Print loss after each epoch to monitor the training process.<br/>
           
 ### 5. Model Evaluation
-**Validation Loop:**
+**Validation Loop:**<br/>
 &emsp; 1. Set the model to evaluation mode.<br/>
 &emsp; 2. Perform inference on the validation/test dataset without updating model weights.<br/>
 &emsp; 3. Calculate accuracy by comparing predicted labels with true labels (for validation data).<br/>
 &emsp; 4. Print accuracy to evaluate model performance.<br/>
       
 ### 6. Inference and Results Preparation
-**Inference**:
+**Inference**:<br/>
 &emsp; 1. Use the trained model to predict labels for the test dataset.<br/>
 &emsp; 2. Extract predicted labels and confidence scores from the model’s output probabilities.<br/>
       
-**Save Results:**
+**Save Results:**<br/>
 &emsp; 1. Format predictions into a CSV file with columns: path, predicted_label, and confidence_score.<br/>
