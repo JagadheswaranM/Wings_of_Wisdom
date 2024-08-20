@@ -6,7 +6,7 @@ Develop a multi-class classifier to identify various bird species from images. T
 
 ## Workflow
 ### 1. Data Preparation
-#### Training Data
+#### Training Data:
 &emsp;**CSV File (train.csv)**: Contains:<br/>
 &emsp;&emsp;**path**: Relative path to the training image.<br/>
 &emsp;&emsp;**class**: Class label of the bird species.<br/>
@@ -17,7 +17,7 @@ Develop a multi-class classifier to identify various bird species from images. T
 &emsp;**Bounding Box Handling**: If bounding boxes are provided, crop the images based on these coordinates to focus on the bird. Ensure that coordinates are in the correct order (i.e., left < right and top < bottom).<br/>
 &emsp;**Transformation**: Apply transformations such as resizing to 224x224 pixels, normalization, and conversion to tensors.<br/>
     
-**Test Data**<br/>
+**Test Data:**<br/>
 &emsp;**CSV File (test.csv)**: Contains:<br/>
 &emsp;&emsp;**path**: Relative path to the test image.<br/>
 &emsp;&emsp;**bbox**: Optional bounding box coordinates.<br/>
