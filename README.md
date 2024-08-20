@@ -30,17 +30,17 @@ Develop a multi-class classifier to identify various bird species from images. T
     3. Differentiates between training and test data to handle labels and bounding boxes appropriately.
     
 ### 3. Model Selection and Modification
-    **Pretrained Model**: Use ResNet-50, a widely used convolutional neural network known for its strong performance in image classification tasks.
-    **Weights**: Load pretrained weights.
-    **Modification**: Replace the final fully connected layer to match the number of bird species (200 classes).
+**Pretrained Model**: Use ResNet-50, a widely used convolutional neural network known for its strong performance in image classification tasks.
+**Weights**: Load pretrained weights.
+**Modification**: Replace the final fully connected layer to match the number of bird species (200 classes).
     
 ### 4. Training the Model
-    **Loss Function**: Use CrossEntropyLoss for multi-class classification, which combines softmax activation and negative log-likelihood loss.
-    **Optimizer**: Use Adam optimizer with a learning rate of 0.001 to update model weights.
-    **Training Loop**:
-          1. Iterate through the training dataset for a specified number of epochs.
-          2. Compute loss for each batch, backpropagate the errors, and update weights.
-          3. Print loss after each epoch to monitor the training process.
+**Loss Function**: Use CrossEntropyLoss for multi-class classification, which combines softmax activation and negative log-likelihood loss.
+**Optimizer**: Use Adam optimizer with a learning rate of 0.001 to update model weights.
+**Training Loop**:
+     1. Iterate through the training dataset for a specified number of epochs.
+     2. Compute loss for each batch, backpropagate the errors, and update weights.
+     3. Print loss after each epoch to monitor the training process.
           
 ### 5. Model Evaluation
 **Validation Loop:**
