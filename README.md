@@ -6,7 +6,7 @@ Develop a multi-class classifier to identify various bird species from images. T
 
 ## Workflow
 ### 1. Data Preparation
-**Training Data**
+#### Training Data
 **CSV File (train.csv)**: Contains:
 **path**: Relative path to the training image.
 **class**: Class label of the bird species.
